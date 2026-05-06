@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 
 public class Boleta {
 
@@ -24,5 +25,10 @@ public class Boleta {
       inverseJoinColumns = @JoinColumn(name = "empleado_id")
     )
     private List<Empleado> empleados;
+
+    @ManyToOne
+    @JoinColumn (name = "TipoPago_id")
+    private TipoPago tipoPago;
+
 
 }
