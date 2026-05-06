@@ -56,4 +56,8 @@ public class Bicicleta {
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
+    @ManyToOne
+    @JoinColumn(name = "modelo_id")
+    private Modelo modelo;
+
 }
