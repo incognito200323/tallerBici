@@ -31,6 +31,7 @@ public class Boleta {
     @JoinColumn (name = "TipoPago_id")
     private TipoPago tipoPago;
 
+<<<<<<< HEAD
     @ManyToMany
     @JoinTable(
       name = "boleta_producto",
@@ -54,4 +55,6 @@ public class Boleta {
       inverseJoinColumns = @JoinColumn(name = "servicio_id")
     )
     private List<Servicio> servicios;
+=======
+>>>>>>> 76bcbb9afd70db24e105dfb4c6fb29c7194a72d8
 }

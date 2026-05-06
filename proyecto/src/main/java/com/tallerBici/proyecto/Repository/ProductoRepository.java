@@ -1,5 +1,8 @@
 package com.tallerBici.proyecto.Repository;
 
-public class ProductoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import com.tallerBici.proyecto.model.Producto;
+
+public interface ProductoRepository extends JpaRepository<Producto, Integer> {
 }

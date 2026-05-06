@@ -1,5 +1,9 @@
 package com.tallerBici.proyecto.Repository;
 
-public class MarcaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.tallerBici.proyecto.model.Marca;
+
+public interface MarcaRepository extends JpaRepository<Marca, Integer> {
 
 }
